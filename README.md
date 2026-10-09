@@ -11,6 +11,7 @@
 - [LEARNING_LOG.md](LEARNING_LOG.md) — журнал выполненной работы и проверки навыков.
 - [DECISIONS.md](DECISIONS.md) — решения по процессу обучения.
 - [docs/WORKFLOW.md](docs/WORKFLOW.md) — работа с заданиями, ветками и PR.
+- [docs/CODE_STYLE.md](docs/CODE_STYLE.md) — публичные правила оформления Python-кода (адаптированная учебная версия).
 - [docs/REPO_AUDIT.md](docs/REPO_AUDIT.md) — известные проблемы репозитория.
 - [reports/](reports/) — шаблоны ежедневных, еженедельных и ежемесячных отчётов.
 
