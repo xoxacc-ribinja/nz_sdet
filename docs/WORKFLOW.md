@@ -23,6 +23,17 @@
 - Before each write, verify the exact owner/repository and target branch.
 - Prefer PRs to direct commits to `main`. Never force-push or rewrite historical submissions without explicit agreement.
 
+## Hidden checks after defense
+
+After a student submits a solution and completes code review and oral defense, the assistant may **occasionally** check the code with previously undisclosed input data. This is not mandatory for every task.
+
+- Hidden inputs must follow the **original or explicitly agreed updated contract**; no surprise requirements or retroactive grading criteria.
+- Do not disclose exact inputs before the defense. Keep the concrete cases out of the public assignment and PR until the check has been completed.
+- Check meaningful boundaries and robustness, including empty collections, duplicates, ordering, invalid inputs and unwanted mutation **only when relevant to the contract**.
+- If a runnable environment is available, execute the solution with the hidden inputs and record actual results. Otherwise describe the check as an unexecuted review or ask for a local run; never claim that unrun tests passed.
+- After checking, explain failed cases and expected behavior. The student should diagnose and fix defects independently before another review.
+- Record whether a hidden check was performed and its result in the learning log. Do not make every task a guessing game.
+
 ## Evidence and reporting
 
 - A failing test can be correct when it exposes a defect in code under test.
