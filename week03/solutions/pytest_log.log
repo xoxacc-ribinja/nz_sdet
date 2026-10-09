@@ -1,0 +1,13 @@
+python -m pytest week03/solutions/test_users.py -v
+===================================================================================== test session starts =====================================================================================
+platform darwin -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0 -- /Users/mac/.pyenv/versions/3.14.0/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/mac/Desktop/Project_NZ/nz_sdet
+collected 4 items
+
+week03/solutions/test_users.py::test_users_count PASSED                                                                                                                                 [ 25%]
+week03/solutions/test_users.py::test_active_users PASSED                                                                                                                                [ 50%]
+week03/solutions/test_users.py::test_admins_count PASSED                                                                                                                                [ 75%]
+week03/solutions/test_users.py::test_active_admins PASSED                                                                                                                               [100%]
+
+====================================================================================== 4 passed in 0.01s ======================================================================================

@@ -1,0 +1,9 @@
+build_windows,PASSED,42
+build_linux,FAILED,55
+deploy_dev,PASSED,31
+broken_line
+tests_api,SKIPPED,18
+deploy_prod,BROKEN,70
+tests_ui,FAILED,95
+lint,PASSED
+package,PASSED,27

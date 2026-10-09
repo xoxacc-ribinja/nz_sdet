@@ -1,0 +1,7 @@
+windows11,windows,running,8192
+ubuntu22,linux,stopped,4096
+macos15,macos,running,16384
+windows10,windows,stopped,4096
+debian13,linux,running,2048
+test-mac,macos,stopped,8192
+router,freebsd,running,1024

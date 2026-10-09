@@ -1,0 +1,9 @@
+login_test,PASSED,18
+checkout_test,FAILED,42
+api_test,PASSED,fast
+broken_line
+search_test,SKIPPED,27
+profile_test,PASSED,35
+payment_test,BROKEN,51
+report_test,FAILED,-5
+ui_test,PASSED,63

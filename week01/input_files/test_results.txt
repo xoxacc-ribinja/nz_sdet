@@ -1,0 +1,8 @@
+test_login PASSED
+test_vm_start FAILED
+test_vm_stop PASSED
+test_something BROKEN
+test_snapshot FAILED
+test_network PASSED
+test_suspend SKIPPED
+test_weird NOT_PASSED

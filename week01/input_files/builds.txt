@@ -1,0 +1,6 @@
+frontend,success,42
+backend,failed,120
+database,success,31
+auth,success,18
+catalog,failed,63
+tests,success,120

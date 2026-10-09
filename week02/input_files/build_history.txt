@@ -1,0 +1,10 @@
+frontend,PASSED,128
+backend,FAILED,94
+api,PASSED,76
+frontend,FAILED,135
+backend,PASSED,101
+worker,BROKEN,82
+api,PASSED,fast
+frontend,PASSED,119
+database,FAILED,67
+backend,PASSED,88

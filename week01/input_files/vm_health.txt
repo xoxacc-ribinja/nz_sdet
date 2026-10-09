@@ -1,0 +1,8 @@
+win-build-01,running,72
+linux-test-01,stopped,0
+mac-build-01,running,91
+win-test-02,running,48
+linux-build-02,error,0
+mac-test-02,running,91
+old-runner,unknown,15
+broken-vm

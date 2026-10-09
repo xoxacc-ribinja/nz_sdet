@@ -1,0 +1,9 @@
+test_login,PASSED
+test_vm_start,FAILED
+test_database,BROKEN
+test_network,FAILED
+test_vm_start,PASSED
+test_snapshot,FAILED
+test_network,FAILED
+test_logout,PASSED
+test_snapshot,PASSED
