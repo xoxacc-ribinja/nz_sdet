@@ -9,7 +9,7 @@ Scope: read-only inspection of GitHub `main` at initial commit `ed98a906b1f1ec21
 - `week03/solutions/pytest_log.log` records four passed tests for `test_users.py` on one Mac run, not the entire suite.
 - `assist.py` hardcodes local `/Users/mac/Desktop/...` paths. Make them configurable in a separate refactoring task.
 - `week02/solutions/tupka.py` converts `run[2]` in-place, mutating input; assess against intended contract before changing.
-- `week03/solutions/python_core_16.py`: `final_users_list.append(user_info)` sits outside the `if is_valid_age(...)` block. Invalid first record can raise `UnboundLocalError`; a later invalid record may append stale previous data. **Needs student review**, not an automatic rewrite.
+- `week03/solutions/python_core_16.py`: `final_users_list.append(user_info)` intentionally left outside `if is_valid_age(...)` **by the author as a deliberate defect**. Invalid first record can raise `UnboundLocalError`; a later invalid record may append stale data. **Do not silently fix this line or treat it as an accidental student mistake**; its purpose is debugging practice.
 - `week03/documentation/task_15.md` requests at least 6 regular delivery cases and 3 invalid weight cases. `week03/solutions/test_delivery_parametrized.py` currently contains 5 regular and 2 invalid cases. The gap should be discussed before assigning PASS.
 - `week03/input_files/delivery.py` has a known boundary mismatch around 5 kg relative to Task 14 contract. Intentional red tests are expected and should not be hidden.
 - Some historical assignments are absent as individual files. Avoid inventing their exact wording.
