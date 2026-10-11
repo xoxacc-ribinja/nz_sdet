@@ -5,6 +5,12 @@
 - **Student:** writes solutions, runs tests, explains decisions and owns final code.
 - **Assistant:** formulates assignments, reviews changes and updates documentation with clear evidence; does not mark PASS by assumption.
 
+## Daily comprehension warm-up
+
+On the student's first message of a calendar day in the learning chat, offer **3–4 short questions** on previously covered Python Core, pytest, Git and test-design concepts. Rotate subjects and occasionally revisit older material. Answers should be possible directly in chat **without writing or running code**; after the student answers, briefly review the reasoning and correct misconceptions.
+
+These warm-ups are for retention, **not extra PASS criteria**, and must not change the contract of an active task. If the student explicitly wants to finish an ongoing task first, handle that work before the warm-up. Do not create a scheduled reminder or unsolicited notification: the warm-up is part of an active chat exchange.
+
 ## Task publication and fixed acceptance criteria
 
 **Before any new task is assigned for implementation**, the assistant must:
