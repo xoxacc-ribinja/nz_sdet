@@ -13,7 +13,7 @@ These warm-ups are for retention, **not extra PASS criteria**, and must not chan
 
 ## Workload and retention checks
 
-- **Historical weekly target: 3–5 hours; new budget pending agreement.** Do not increase hours automatically because recall is difficult. The target is an orientation, not a quota to compensate for missed days.
+- **Current weekly target: 12 hours from 2026-10-11**, explicitly chosen by the student instead of the former 3–5 hours. This is a flexible weekly target, not a daily schedule or catch-up quota. Do not increase hours automatically because recall is difficult. The target is an orientation, not a quota to compensate for missed days.
 - Reduce nearly identical exercises. Reuse already taught tools in different problem contexts; do not increase difficulty or introduce unannounced syntax merely for novelty.
 - Practice retrieval without hints through daily verbal warm-ups and revisit previously covered concepts after several days (spaced repetition).
 - During review, report **correctness** separately from **independence**: solved without help / after a leading hint / after a full explanation. These labels are diagnostic, not extra acceptance criteria or grounds for retroactive regrading.
@@ -24,7 +24,7 @@ These warm-ups are for retention, **not extra PASS criteria**, and must not chan
 
 Use Bug Investigation as a recurring exercise format alongside implementation and test design. Publish the full task contract first. The learner analyzes an unknown failure, reads the traceback and pytest output, proposes a root-cause hypothesis, finds and fixes the defect with a minimal change, and verifies by running tests. Distinguish detecting a defect from independently diagnosing it. Explain unfamiliar tools before requiring them.
 
-Read small unfamiliar codebases only occasionally, without displacing the student's own coding. Do not require pytest internals, external open-source PRs, fixed weekly themes, or a day-by-day schedule. A new weekly hour budget is pending agreement.
+Read small unfamiliar codebases only occasionally, without displacing the student's own coding. Do not require pytest internals, external open-source PRs, fixed weekly themes, or a day-by-day schedule. The agreed weekly target is 12 hours, with flexible distribution across days.
 
 ## Task publication and fixed acceptance criteria
 
