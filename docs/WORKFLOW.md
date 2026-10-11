@@ -63,6 +63,20 @@ After a student submits a solution and completes code review and oral defense, t
 - After checking, explain failed cases and expected behavior. The student should diagnose and fix defects independently before another review.
 - Record whether a hidden check was performed and its result in the learning log. Do not make every task a guessing game.
 
+## Request decomposition and completion check
+
+For a multi-part request, explicitly separate requested **actions**, **outputs** and **object-specific constraints**. A restriction on one output (e.g. “NZ Daily only in chat”) does not prohibit a separate requested GitHub documentation update.
+
+Before closing a multi-step request, verify every deliverable against the request; distinguish prepared locally, written to a branch, PR opened, merged into main, and tests actually run. After GitHub writes, **read back** the target files from the target branch; inspect the PR file list, do not infer completion from a successful write API response.
+
+When documenting earlier exercises, label original historical contracts separately from later reconstructions or reviews. Never change old PASS criteria retroactively or portray a retroactively published task as published before work.
+
+## Reporting cadence and recovery
+
+- **NZ DAILY**, **NZ WEEKLY** and monthly summaries are available on request; do not automatically post reports or schedule reminders. The report destination is determined per user instruction.
+- Distinguish real coding time, engineering work, and process overhead; do not treat missed study days as debt or automatically increase weekly hours.
+- End-of-November check is a diagnostic skills gate (historically proposed 60–90 min unfamiliar Python task without AI and defense), not a rigid deadline or new PASS requirement.
+
 ## Evidence and reporting
 
 - A failing test can be correct when it exposes a defect in code under test.
