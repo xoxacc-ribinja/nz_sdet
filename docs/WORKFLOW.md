@@ -13,12 +13,18 @@ These warm-ups are for retention, **not extra PASS criteria**, and must not chan
 
 ## Workload and retention checks
 
-- **Weekly time target: 3–5 hours.** Do not increase hours automatically because recall is difficult. The target is an orientation, not a quota to compensate for missed days.
+- **Historical weekly target: 3–5 hours; new budget pending agreement.** Do not increase hours automatically because recall is difficult. The target is an orientation, not a quota to compensate for missed days.
 - Reduce nearly identical exercises. Reuse already taught tools in different problem contexts; do not increase difficulty or introduce unannounced syntax merely for novelty.
 - Practice retrieval without hints through daily verbal warm-ups and revisit previously covered concepts after several days (spaced repetition).
 - During review, report **correctness** separately from **independence**: solved without help / after a leading hint / after a full explanation. These labels are diagnostic, not extra acceptance criteria or grounds for retroactive regrading.
 - In daily learning summaries distinguish time spent **writing code**, **engineering work** (requirements, test design, debugging, reviews, Git), and **process overhead** (resolving avoidable administrative mistakes). Do not present process overhead as coding practice. Do not invent precise splits where only estimates are available.
 - Keep published task contracts and PASS criteria unchanged unless the student explicitly agrees to an update.
+
+## Bug Investigation
+
+Use Bug Investigation as a recurring exercise format alongside implementation and test design. Publish the full task contract first. The learner analyzes an unknown failure, reads the traceback and pytest output, proposes a root-cause hypothesis, finds and fixes the defect with a minimal change, and verifies by running tests. Distinguish detecting a defect from independently diagnosing it. Explain unfamiliar tools before requiring them.
+
+Read small unfamiliar codebases only occasionally, without displacing the student's own coding. Do not require pytest internals, external open-source PRs, fixed weekly themes, or a day-by-day schedule. A new weekly hour budget is pending agreement.
 
 ## Task publication and fixed acceptance criteria
 
