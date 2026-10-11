@@ -11,6 +11,15 @@ On the student's first message of a calendar day in the learning chat, offer **3
 
 These warm-ups are for retention, **not extra PASS criteria**, and must not change the contract of an active task. If the student explicitly wants to finish an ongoing task first, handle that work before the warm-up. Do not create a scheduled reminder or unsolicited notification: the warm-up is part of an active chat exchange.
 
+## Workload and retention checks
+
+- **Weekly time target: 3–5 hours.** Do not increase hours automatically because recall is difficult. The target is an orientation, not a quota to compensate for missed days.
+- Reduce nearly identical exercises. Reuse already taught tools in different problem contexts; do not increase difficulty or introduce unannounced syntax merely for novelty.
+- Practice retrieval without hints through daily verbal warm-ups and revisit previously covered concepts after several days (spaced repetition).
+- During review, report **correctness** separately from **independence**: solved without help / after a leading hint / after a full explanation. These labels are diagnostic, not extra acceptance criteria or grounds for retroactive regrading.
+- In daily learning summaries distinguish time spent **writing code**, **engineering work** (requirements, test design, debugging, reviews, Git), and **process overhead** (resolving avoidable administrative mistakes). Do not present process overhead as coding practice. Do not invent precise splits where only estimates are available.
+- Keep published task contracts and PASS criteria unchanged unless the student explicitly agrees to an update.
+
 ## Task publication and fixed acceptance criteria
 
 **Before any new task is assigned for implementation**, the assistant must:
