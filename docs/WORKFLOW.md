@@ -5,15 +5,29 @@
 - **Student:** writes solutions, runs tests, explains decisions and owns final code.
 - **Assistant:** formulates assignments, reviews changes and updates documentation with clear evidence; does not mark PASS by assumption.
 
+## Task publication and fixed acceptance criteria
+
+**Before any new task is assigned for implementation**, the assistant must:
+
+1. Read the repository guidance: `README.md`, `PROJECT_STATE.md`, `LEARNING_LOG.md`, `DECISIONS.md`, `docs/WORKFLOW.md`, `ROADMAP.md` and the relevant existing tasks.
+2. Publish a numbered assignment Markdown file under `weekXX/documentation/task_NN.md` in GitHub, with an explicit contract, expected outputs/exceptions, scope, constraints, and PASS criteria. Provide its link to the student. The assignment must be available **before coding starts**, not reconstructed after completion.
+3. Explain any new Python syntax, APIs or testing techniques **before** requiring them in an exercise. New constructs cannot appear as unannounced mandatory requirements.
+4. Keep assessment against the published, agreed criteria. Do not introduce new mandatory edge cases, test counts, tools, or acceptance conditions mid-review.
+5. If a change to requirements is genuinely needed, discuss it first, obtain agreement, and update the assignment in GitHub **before** evaluating against it. Never retroactively revoke an already accepted PASS.
+
 ## Work cycle
 
-1. Read `PROJECT_STATE.md`, `ROADMAP.md` and the relevant assignment.
+1. Confirm that the assignment is published in GitHub and review its fixed criteria.
 2. Create a branch, e.g. `task/17`, from up-to-date `main`.
 3. Implement without copying an AI-generated solution. Record any assistance used.
 4. Run targeted checks and capture command plus meaningful output.
 5. Push and open a Pull Request. Link task, summarize approach and unresolved questions.
 6. Review diff and discuss boundary cases, independent decisions and regressions.
 7. Merge only after the owner accepts the result. Update `LEARNING_LOG.md` and `PROJECT_STATE.md`.
+
+## Assistant documentation check
+
+Before proposing a new task, reviewing a submission, recording PASS, or writing to GitHub, re-read the relevant repository documents and current assignment instead of relying only on chat context. If a document is outdated, flag it and propose a documentation change through a PR; do not silently assume it reflects the current state.
 
 ## GitHub access boundaries
 
