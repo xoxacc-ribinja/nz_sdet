@@ -1,13 +1,16 @@
-python -m pytest week03/solutions/test_users.py -v
+python -m pytest week03/solutions/test_python_core_17.py -v
 ===================================================================================== test session starts =====================================================================================
 platform darwin -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0 -- /Users/mac/.pyenv/versions/3.14.0/bin/python
 cachedir: .pytest_cache
 rootdir: /Users/mac/Desktop/Project_NZ/nz_sdet
-collected 4 items
+collected 7 items
 
-week03/solutions/test_users.py::test_users_count PASSED                                                                                                                                 [ 25%]
-week03/solutions/test_users.py::test_active_users PASSED                                                                                                                                [ 50%]
-week03/solutions/test_users.py::test_admins_count PASSED                                                                                                                                [ 75%]
-week03/solutions/test_users.py::test_active_admins PASSED                                                                                                                               [100%]
+week03/solutions/test_python_core_17.py::test_summarized_results[results0-expected0] PASSED                                                                                             [ 14%]
+week03/solutions/test_python_core_17.py::test_summarized_results[results1-expected1] PASSED                                                                                             [ 28%]
+week03/solutions/test_python_core_17.py::test_invalid_results[results0] PASSED                                                                                                          [ 42%]
+week03/solutions/test_python_core_17.py::test_invalid_results[results1] PASSED                                                                                                          [ 57%]
+week03/solutions/test_python_core_17.py::test_invalid_results[results2] PASSED                                                                                                          [ 71%]
+week03/solutions/test_python_core_17.py::test_invalid_results[results3] PASSED                                                                                                          [ 85%]
+week03/solutions/test_python_core_17.py::test_not_modified_input PASSED                                                                                                                 [100%]
 
-====================================================================================== 4 passed in 0.01s ======================================================================================
+====================================================================================== 7 passed in 0.01s ======================================================================================
