@@ -1,0 +1,177 @@
+python -m pytest week03/solutions/test_api_response_triage.py -v
+===================================================================================== test session starts =====================================================================================
+platform darwin -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0 -- /Users/mac/.pyenv/versions/3.14.0/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/mac/Desktop/Project_NZ/nz_sdet
+collected 36 items
+
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data0-OTHER] PASSED                                                                                                  [  2%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data1-OTHER] PASSED                                                                                                  [  5%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data2-OTHER] PASSED                                                                                                  [  8%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data3-OTHER] PASSED                                                                                                  [ 11%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data4-OTHER] PASSED                                                                                                  [ 13%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data5-OTHER] PASSED                                                                                                  [ 16%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data6-OTHER] PASSED                                                                                                  [ 19%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data7-OTHER] PASSED                                                                                                  [ 22%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data8-SUCCESS] PASSED                                                                                                [ 25%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data9-SUCCESS] PASSED                                                                                                [ 27%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data10-SUCCESS] PASSED                                                                                               [ 30%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data11-SUCCESS] FAILED                                                                                               [ 33%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data12-EMPTY_SUCCESS] PASSED                                                                                         [ 36%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data13-SLOW_SUCCESS] PASSED                                                                                          [ 38%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data14-EMPTY_SUCCESS] PASSED                                                                                         [ 41%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data15-CLIENT_ERROR] PASSED                                                                                          [ 44%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data16-CLIENT_ERROR] PASSED                                                                                          [ 47%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data17-CLIENT_ERROR] PASSED                                                                                          [ 50%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data18-CLIENT_ERROR] PASSED                                                                                          [ 52%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data19-SERVER_ERROR] PASSED                                                                                          [ 55%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data20-SERVER_ERROR] PASSED                                                                                          [ 58%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data21-SERVER_ERROR] PASSED                                                                                          [ 61%]
+week03/solutions/test_api_response_triage.py::test_verify_statuses[data22-SERVER_ERROR] PASSED                                                                                          [ 63%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data0] PASSED                                                                                                           [ 66%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data1] PASSED                                                                                                           [ 69%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data2] PASSED                                                                                                           [ 72%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data3] PASSED                                                                                                           [ 75%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data4] PASSED                                                                                                           [ 77%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data5] PASSED                                                                                                           [ 80%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data6] PASSED                                                                                                           [ 83%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data7] PASSED                                                                                                           [ 86%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data8] PASSED                                                                                                           [ 88%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data9] PASSED                                                                                                           [ 91%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data10] PASSED                                                                                                          [ 94%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data11] PASSED                                                                                                          [ 97%]
+week03/solutions/test_api_response_triage.py::test_invalid_data[data12] PASSED                                                                                                          [100%]
+
+========================================================================================== FAILURES ===========================================================================================
+____________________________________________________________________________ test_verify_statuses[data11-SUCCESS] _____________________________________________________________________________
+
+data = (200, 1000, True), expected = 'SUCCESS'
+
+    @pytest.mark.parametrize(
+        'data, expected',
+        [
+            (
+                (100, 10, True), 'OTHER' # Verify lower 1xx status boundary
+            ),
+            (
+                (199, 10, True), 'OTHER' # Verify upper 1xx status boundary
+            ),
+            (
+                (109, 1010, True), 'OTHER' # Verify 1xx status independence from latency
+            ),
+            (
+                (101, 100, False), 'OTHER'  # Verify 1xx status independence from body
+            ),
+            (
+                (300, 10, True), 'OTHER' # Verify lower 3xx status boundary
+            ),
+            (
+                (399, 10, True), 'OTHER' # Verify upper 3xx status boundary
+            ),
+            (
+                (395, 1001, True), 'OTHER' # Verify 3xx status independence from latency
+            ),
+            (
+                (300, 10, False), 'OTHER' # Verify 3xx status independence from body
+            ),
+            (
+                (200, 10, True), 'SUCCESS' # Verify lower 2xx status boundary
+            ),
+            (
+                (299, 10, True), 'SUCCESS' # Verify upper 2xx status boundary
+            ),
+            (
+                (200, 0, True), 'SUCCESS' # Verify zero latency for 2xx status
+            ),
+            (
+                (200, 1000, True), 'SUCCESS' # Verify upper latency boundary for regular 2xx status success
+            ),
+            (
+                (299, 10, False), 'EMPTY_SUCCESS' # Verify 'no body' for 2xx
+            ),
+            (
+                (202, 1001, True), 'SLOW_SUCCESS' # Verify slow success for 2xx status
+            ),
+            (
+                (200, 1003, False), 'EMPTY_SUCCESS' # Verify 'empty success' even for big latency for 2xx status
+            ),
+            (
+                (400, 1, True), 'CLIENT_ERROR' # Verify lower 4xx status boundary
+            ),
+            (
+                (499, 1, True), 'CLIENT_ERROR' # Verify upper 4xx status boundary
+            ),
+            (
+                (400, 1, False), 'CLIENT_ERROR' # Verify 4xx status independence from body
+            ),
+            (
+                (400, 1001, True), 'CLIENT_ERROR' # Verify 4xx status independence from latency
+            ),
+            (
+                (500, 1, True), 'SERVER_ERROR' # Verify lower 5xx status boundary
+            ),
+            (
+                (599, 1, True), 'SERVER_ERROR' # Verify upper 5xx status boundary
+            ),
+            (
+                (500, 1, False), 'SERVER_ERROR' # Verify 5xx status independence from body
+            ),
+            (
+                (500, 1001, True), 'SERVER_ERROR' # Verify 5xx status independence from latency
+            ),
+        ]
+    )
+    def test_verify_statuses(data, expected):
+>       assert classify_api_response(*data) == expected
+E       AssertionError: assert 'SLOW_SUCCESS' == 'SUCCESS'
+E
+E         - SUCCESS
+E         + SLOW_SUCCESS
+
+week03/solutions/test_api_response_triage.py:91: AssertionError
+=================================================================================== short test summary info ===================================================================================
+FAILED week03/solutions/test_api_response_triage.py::test_verify_statuses[data11-SUCCESS] - AssertionError: assert 'SLOW_SUCCESS' == 'SUCCESS'
+================================================================================ 1 failed, 35 passed in 0.05s =================================================================================
+ python -m pytest week03/solutions/test_python_core_20.py -v
+===================================================================================== test session starts =====================================================================================
+platform darwin -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0 -- /Users/mac/.pyenv/versions/3.14.0/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/mac/Desktop/Project_NZ/nz_sdet
+collected 34 items
+
+week03/solutions/test_python_core_20.py::test_verify_contract[data0-expected0] PASSED                                                                                                   [  2%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data1-expected1] PASSED                                                                                                   [  5%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data2-expected2] PASSED                                                                                                   [  8%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data3-expected3] PASSED                                                                                                   [ 11%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data4-expected4] PASSED                                                                                                   [ 14%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data5-expected5] PASSED                                                                                                   [ 17%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data6-expected6] PASSED                                                                                                   [ 20%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data7-expected7] PASSED                                                                                                   [ 23%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data8-expected8] PASSED                                                                                                   [ 26%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data9-expected9] PASSED                                                                                                   [ 29%]
+week03/solutions/test_python_core_20.py::test_verify_contract[data10-expected10] PASSED                                                                                                 [ 32%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data0] PASSED                                                                                                                [ 35%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data1] PASSED                                                                                                                [ 38%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data2] PASSED                                                                                                                [ 41%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data3] PASSED                                                                                                                [ 44%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data4] PASSED                                                                                                                [ 47%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data5] PASSED                                                                                                                [ 50%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data6] PASSED                                                                                                                [ 52%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data7] PASSED                                                                                                                [ 55%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data8] PASSED                                                                                                                [ 58%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data9] PASSED                                                                                                                [ 61%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data10] PASSED                                                                                                               [ 64%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data11] PASSED                                                                                                               [ 67%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data12] PASSED                                                                                                               [ 70%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data13] PASSED                                                                                                               [ 73%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data14] PASSED                                                                                                               [ 76%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data15] PASSED                                                                                                               [ 79%]
+week03/solutions/test_python_core_20.py::test_invalid_data[data16] PASSED                                                                                                               [ 82%]
+week03/solutions/test_python_core_20.py::test_immutable_current[data0] PASSED                                                                                                           [ 85%]
+week03/solutions/test_python_core_20.py::test_immutable_deliveries[data0] PASSED                                                                                                        [ 88%]
+week03/solutions/test_python_core_20.py::test_immutable_internal_dicts[data0] PASSED                                                                                                    [ 91%]
+week03/solutions/test_python_core_20.py::test_result_is_another_object_than_current_with_empty_deliveries PASSED                                                                        [ 94%]
+week03/solutions/test_python_core_20.py::test_result_is_another_object_than_current_with_non_empty_deliveries PASSED                                                                    [ 97%]
+week03/solutions/test_python_core_20.py::test_immutable_input_data_on_valueError[current0-deliveries0] PASSED                                                                           [100%]
+
+===================================================================================== 34 passed in 0.02s ======================================================================================
