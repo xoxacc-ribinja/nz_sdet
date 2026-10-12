@@ -1,16 +1,132 @@
-python -m pytest week03/solutions/test_python_core_17.py -v
+python -m pytest week03/solutions/test_python_core_19.py -v
 ===================================================================================== test session starts =====================================================================================
 platform darwin -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0 -- /Users/mac/.pyenv/versions/3.14.0/bin/python
 cachedir: .pytest_cache
 rootdir: /Users/mac/Desktop/Project_NZ/nz_sdet
-collected 7 items
+collected 26 items
 
-week03/solutions/test_python_core_17.py::test_summarized_results[results0-expected0] PASSED                                                                                             [ 14%]
-week03/solutions/test_python_core_17.py::test_summarized_results[results1-expected1] PASSED                                                                                             [ 28%]
-week03/solutions/test_python_core_17.py::test_invalid_results[results0] PASSED                                                                                                          [ 42%]
-week03/solutions/test_python_core_17.py::test_invalid_results[results1] PASSED                                                                                                          [ 57%]
-week03/solutions/test_python_core_17.py::test_invalid_results[results2] PASSED                                                                                                          [ 71%]
-week03/solutions/test_python_core_17.py::test_invalid_results[results3] PASSED                                                                                                          [ 85%]
-week03/solutions/test_python_core_17.py::test_not_modified_input PASSED                                                                                                                 [100%]
+week03/solutions/test_python_core_19.py::test_normal_buy[data0-expected0] PASSED                                                                                                        [  3%]
+week03/solutions/test_python_core_19.py::test_normal_buy[data1-expected1] PASSED                                                                                                        [  7%]
+week03/solutions/test_python_core_19.py::test_normal_buy[data2-expected2] PASSED                                                                                                        [ 11%]
+week03/solutions/test_python_core_19.py::test_normal_buy[data3-expected3] PASSED                                                                                                        [ 15%]
+week03/solutions/test_python_core_19.py::test_normal_buy[data4-expected4] PASSED                                                                                                        [ 19%]
+week03/solutions/test_python_core_19.py::test_normal_buy[data5-expected5] PASSED                                                                                                        [ 23%]
+week03/solutions/test_python_core_19.py::test_normal_buy[data6-expected6] PASSED                                                                                                        [ 26%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data0] PASSED                                                                                                               [ 30%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data1] PASSED                                                                                                               [ 34%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data2] PASSED                                                                                                               [ 38%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data3] PASSED                                                                                                               [ 42%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data4] PASSED                                                                                                               [ 46%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data5] PASSED                                                                                                               [ 50%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data6] PASSED                                                                                                               [ 53%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data7] PASSED                                                                                                               [ 57%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data8] PASSED                                                                                                               [ 61%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data9] PASSED                                                                                                               [ 65%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data10] PASSED                                                                                                              [ 69%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data11] PASSED                                                                                                              [ 73%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data12] PASSED                                                                                                              [ 76%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data13] PASSED                                                                                                              [ 80%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data14] PASSED                                                                                                              [ 84%]
+week03/solutions/test_python_core_19.py::test_is_data_valid[data15] PASSED                                                                                                              [ 88%]
+week03/solutions/test_python_core_19.py::test_immutable_original_inventory[100-5-inventory0-hat] PASSED                                                                                 [ 92%]
+week03/solutions/test_python_core_19.py::test_immutable_original_inventory_with_no_buying[3-5-inventory0-hat] PASSED                                                                    [ 96%]
+week03/solutions/test_python_core_19.py::test_new_object_returned[100-5-inventory0-hat] PASSED                                                                                          [100%]
 
-====================================================================================== 7 passed in 0.01s ======================================================================================
+===================================================================================== 26 passed in 0.02s ======================================================================================
+
+
+ python -m pytest week03/solutions/test_storage_billing.py -v
+===================================================================================== test session starts =====================================================================================
+platform darwin -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0 -- /Users/mac/.pyenv/versions/3.14.0/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/mac/Desktop/Project_NZ/nz_sdet
+collected 15 items
+
+week03/solutions/test_storage_billing.py::test_input_data[data0-0] PASSED                                                                                                               [  6%]
+week03/solutions/test_storage_billing.py::test_input_data[data1-0] FAILED                                                                                                               [ 13%]
+week03/solutions/test_storage_billing.py::test_input_data[data2-2] FAILED                                                                                                               [ 20%]
+week03/solutions/test_storage_billing.py::test_input_data[data3-0] PASSED                                                                                                               [ 26%]
+week03/solutions/test_storage_billing.py::test_input_data[data4-0] PASSED                                                                                                               [ 33%]
+week03/solutions/test_storage_billing.py::test_input_data[data5-0] PASSED                                                                                                               [ 40%]
+week03/solutions/test_storage_billing.py::test_input_data[data6-6] FAILED                                                                                                               [ 46%]
+week03/solutions/test_storage_billing.py::test_invalid_inputs[data0] PASSED                                                                                                             [ 53%]
+week03/solutions/test_storage_billing.py::test_invalid_inputs[data1] PASSED                                                                                                             [ 60%]
+week03/solutions/test_storage_billing.py::test_invalid_inputs[data2] PASSED                                                                                                             [ 66%]
+week03/solutions/test_storage_billing.py::test_invalid_inputs[data3] PASSED                                                                                                             [ 73%]
+week03/solutions/test_storage_billing.py::test_invalid_inputs[data4] PASSED                                                                                                             [ 80%]
+week03/solutions/test_storage_billing.py::test_invalid_inputs[data5] PASSED                                                                                                             [ 86%]
+week03/solutions/test_storage_billing.py::test_invalid_inputs[data6] PASSED                                                                                                             [ 93%]
+week03/solutions/test_storage_billing.py::test_input_type[data0-int] PASSED                                                                                                             [100%]
+
+========================================================================================== FAILURES ===========================================================================================
+__________________________________________________________________________________ test_input_data[data1-0] ___________________________________________________________________________________
+
+data = (2, 2, 2), expected = 0
+
+    @pytest.mark.parametrize(
+        'data, expected',
+        [
+            ((1, 2, 3), 0),
+            ((2, 2, 2), 0),
+            ((3, 2, 2), 2),
+            ((3, 2, 0), 0),
+            ((0, 1, 0), 0),
+            ((0, 0, 0), 0),
+            ((3, 0, 2), 6)
+        ]
+    )
+    def test_input_data(data, expected):
+>       assert calculate_storage_cost(*data) == expected
+E       assert 2 == 0
+E        +  where 2 = calculate_storage_cost(*(2, 2, 2))
+
+week03/solutions/test_storage_billing.py:21: AssertionError
+__________________________________________________________________________________ test_input_data[data2-2] ___________________________________________________________________________________
+
+data = (3, 2, 2), expected = 2
+
+    @pytest.mark.parametrize(
+        'data, expected',
+        [
+            ((1, 2, 3), 0),
+            ((2, 2, 2), 0),
+            ((3, 2, 2), 2),
+            ((3, 2, 0), 0),
+            ((0, 1, 0), 0),
+            ((0, 0, 0), 0),
+            ((3, 0, 2), 6)
+        ]
+    )
+    def test_input_data(data, expected):
+>       assert calculate_storage_cost(*data) == expected
+E       assert 4 == 2
+E        +  where 4 = calculate_storage_cost(*(3, 2, 2))
+
+week03/solutions/test_storage_billing.py:21: AssertionError
+__________________________________________________________________________________ test_input_data[data6-6] ___________________________________________________________________________________
+
+data = (3, 0, 2), expected = 6
+
+    @pytest.mark.parametrize(
+        'data, expected',
+        [
+            ((1, 2, 3), 0),
+            ((2, 2, 2), 0),
+            ((3, 2, 2), 2),
+            ((3, 2, 0), 0),
+            ((0, 1, 0), 0),
+            ((0, 0, 0), 0),
+            ((3, 0, 2), 6)
+        ]
+    )
+    def test_input_data(data, expected):
+>       assert calculate_storage_cost(*data) == expected
+E       assert 8 == 6
+E        +  where 8 = calculate_storage_cost(*(3, 0, 2))
+
+week03/solutions/test_storage_billing.py:21: AssertionError
+=================================================================================== short test summary info ===================================================================================
+FAILED week03/solutions/test_storage_billing.py::test_input_data[data1-0] - assert 2 == 0
+FAILED week03/solutions/test_storage_billing.py::test_input_data[data2-2] - assert 4 == 2
+FAILED week03/solutions/test_storage_billing.py::test_input_data[data6-6] - assert 8 == 6
+================================================================================ 3 failed, 12 passed in 0.04s =================================================================================
