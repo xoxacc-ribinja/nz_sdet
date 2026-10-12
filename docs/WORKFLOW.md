@@ -80,7 +80,9 @@ When documenting earlier exercises, label original historical contracts separate
 
 ## Reporting cadence and recovery
 
-- **NZ DAILY**, **NZ WEEKLY** and monthly summaries are available on request; do not automatically post reports or schedule reminders. The report destination is determined per user instruction.
+- **NZ DAILY**: produce a retrospective report for the preceding calendar day **daily on a morning schedule** (approximately 08:00 in the learner's local timezone, flexible delivery). Default destination is `reports/daily/YYYY-MM-DD.md` in GitHub, proposed through a separate branch and PR; verify the file and PR before reporting success. Do not claim the PR is merged until confirmed.
+- **Chat-only exception**: if the learner explicitly asks for a specific report **only in chat**, do not publish that specific report in GitHub. Do not apply this exception to other reports or requested repository updates.
+- **NZ WEEKLY** and monthly summaries remain on request unless separately changed. Reporting cadence does not impose a day-by-day study schedule. When activity evidence is unavailable, state the gap explicitly; do not fabricate time, tests or progress. Public reports must be anonymized.
 - Distinguish real coding time, engineering work, and process overhead; do not treat missed study days as debt or automatically increase weekly hours.
 - End-of-November check is a diagnostic skills gate (historically proposed 60–90 min unfamiliar Python task without AI and defense), not a rigid deadline or new PASS requirement.
 
