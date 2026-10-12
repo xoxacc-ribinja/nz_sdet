@@ -43,9 +43,19 @@ Read small unfamiliar codebases only occasionally, without displacing the studen
 2. Create a branch, e.g. `task/17`, from up-to-date `main`.
 3. Implement without copying an AI-generated solution. Record any assistance used.
 4. Run targeted checks and capture command plus meaningful output.
-5. Push and open a Pull Request. Link task, summarize approach and unresolved questions.
-6. Review diff and discuss boundary cases, independent decisions and regressions.
-7. Merge only after the owner accepts the result. Update `LEARNING_LOG.md` and `PROJECT_STATE.md`.
+5. Push and open a Pull Request. Link the task and supply the code and actual test evidence; the student need not draft a separate explanatory essay.
+6. Review the PR and conduct the explanation/defense interactively in the learning chat: test design, found defects, implementation choices, edge cases, and independence. The assistant gives concrete feedback and verifies results; do not replace the defense with a PR essay.
+7. After the defense, the assistant prepares a concise, factual defense summary in a separate documentation branch/PR (normally in `LEARNING_LOG.md`, with `PROJECT_STATE.md` updated as appropriate). Record the contract/PR link, verdict, actual pytest command and results, detected defects, key reasoning, assistance used and follow-ups. Do not publish a verbatim chat transcript or invent evidence; do not require the student to write this summary.
+8. Merge student and documentation PRs only after the owner accepts the result. Distinguish PR created from merged into `main`.
+
+
+## Chat-first defense and GitHub summary (agreed 2026-10-12)
+
+- Applies starting with Task 19 and to future tasks. The student defends the solution in the learning chat; the assistant leads the review and assesses understanding and independence there.
+- The GitHub record is a concise **outcome of the defense**, not a prerequisite essay or full transcript. The assistant drafts it in a separate documentation PR after the discussion. It includes why any intentionally red tests are expected and the main implementation/test-design decisions.
+- For Task 19, the published behavioral contract and PASS criteria stay unchanged. Its requirement to explain the defect in A and the algorithm in B is fulfilled by the chat defense plus the recorded summary, rather than a duplicate written explanation by the student in PR #17.
+- The student owns the code and executes or supplies actual test evidence; the assistant must distinguish the student's log from a test run independently executed by the assistant. Never assert a run occurred when it did not.
+- Documentation PRs are reviewed and merged by the repository owner; a documentation PR does not mean the learning task has already passed.
 
 ## Assistant documentation check
 
