@@ -1,0 +1,13 @@
+ python -m pytest week04/solutions/test_python_core_21.py -v
+===================================================================================== test session starts =====================================================================================
+platform darwin -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0 -- /Users/mac/.pyenv/versions/3.14.0/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/mac/Desktop/Project_NZ/nz_sdet
+collected 4 items
+
+week04/solutions/test_python_core_21.py::test_validate_solution[data0-0] PASSED                                                                                                         [ 25%]
+week04/solutions/test_python_core_21.py::test_validate_solution[data1-2] PASSED                                                                                                         [ 50%]
+week04/solutions/test_python_core_21.py::test_validate_solution[data2-None] PASSED                                                                                                      [ 75%]
+week04/solutions/test_python_core_21.py::test_validate_solution[data3-None] PASSED                                                                                                      [100%]
+
+====================================================================================== 4 passed in 0.01s ======================================================================================
