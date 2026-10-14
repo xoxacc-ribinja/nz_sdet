@@ -1,0 +1,28 @@
+name: Task contract guard
+
+on:
+  pull_request:
+    paths:
+      - 'week*/documentation/task_*.md'
+      - 'tools/validate_task_contract.py'
+      - 'tests/test_validate_task_contract.py'
+      - 'docs/ACTIVE_WEEK.json'
+      - '.github/workflows/task-contract-guard.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test the validator
+        run: python -m unittest discover -s tests -p 'test_validate_task_contract.py' -v
+      - name: Validate changed contracts
+        run: |
+          git fetch origin main
+          python tools/validate_task_contract.py
