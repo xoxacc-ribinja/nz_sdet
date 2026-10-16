@@ -1,11 +1,10 @@
-# Public progress reports
+# Публичные отчёты об учебном прогрессе
 
-Use `templates/` for short, factual reports. Proposed destinations:
+**Единственная инструкция агенту — [AGENTS.md](../AGENTS.md).** В этой папке только шаблоны и результаты.
 
-- `daily/YYYY-MM-DD.md`
-- `weekly/YYYY-Www.md`
-- `monthly/YYYY-MM.md`
+- `daily/YYYY-MM-DD.md` — утренний NZ DAILY **за предыдущий день**, с наблюдениями из **чата и GitHub**, прежде всего о навыках, ошибках и самостоятельности; по умолчанию отдельная ветка и PR.
+- `weekly/` — NZ WEEKLY по запросу или отдельному согласованному расписанию; самостоятельность и удержание знаний важнее количества PR.
+- `monthly/` — NZ MONTHLY по запросу или отдельно согласованному расписанию.
+- `templates/` — шаблоны отчётов, **не учебные задания** и не критерии PASS.
 
-Do not publish raw personal diary entries, full conversation exports, sensitive family/financial information or confidential work details. Report concrete learning outcomes and verifiable code/test evidence.
-
-The original NZ_DAILY prompt includes time, work, learning, blockers, AI usage, English and personal well-being. Public reports intentionally omit the personal well-being field; it can remain private.
+Если конкретный отчёт запрошен **только в чате**, в GitHub его не публиковать. Нет времени или данных — писать «неизвестно», не ноль. Не копировать личные дневники, экспорт переписки, сведения о семье/финансах/здоровье, секреты и конфиденциальные рабочие материалы. Не считать статус автоматизации доказательством того, что отчёт реально записался.
